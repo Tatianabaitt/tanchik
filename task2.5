@@ -1,0 +1,9 @@
+#!/bin/bash
+mv /tmp/big.txt
+find /home -type f | grep .txt > /tmp/big.txt
+cat /tmp/big.txt
+echo "Количество строчек:"
+wc -c /tmp/big.txt
+echo "Количество байт:" 
+du -b /tmp/big.txt
+
