@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "arg = \"1\" \"2\" \"3\""
+"$1" "1" "2" "3"
+echo "5 random arg"
+"$1" $RANDOM $RANDOM $RANDOM $RANDOM $RANDOM
+echo "arg = \foo\" \"bar\" \"foobar\" \"foo bar\""
+"$1" "foo" "bar" "foobar" "foo bar"
+ecgo "arg = \"foo\" \"--foo\" \"--help\" \"-l\""
+"$1" "foo" "--foo" "--help" "-l"
+
