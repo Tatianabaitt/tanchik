@@ -6,6 +6,6 @@ ls -l
 echo "Символьные ссылки":
 ls -l | grep ^l
 echo "Символьные устройства:"
-ls -l/dev | grep ^c
+ls -l /dev | grep ^c
 echo "Блочные устройства:"
-ls -l/dev | grep ^b
+ls -l /dev | grep ^b
